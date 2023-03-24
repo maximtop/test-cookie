@@ -31,6 +31,7 @@ async function handleRequest(request: Request, env: Env, ctx: ExecutionContext):
 	}
 
 	const cookieHeader = request.headers.get("Cookie");
+	console.log(cookieHeader);
 	let currentVisitCount = 0;
 
 	if (cookieHeader) {
